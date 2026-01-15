@@ -1,0 +1,8 @@
+{
+  "name": "sqlvalid",
+  "image": "mcr.microsoft.com/devcontainers/go:1.24",
+  "postCreateCommand": "go mod download",
+  "containerEnv": {
+    "CGO_ENABLED": "1"
+  }
+}
