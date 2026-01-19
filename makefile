@@ -17,7 +17,7 @@ golang:
 
 .PHONY: build
 build:
-	CGO_ENABLED=1 go build -o sqlvalid cmd/sqlvalid/main.go
+	CGO_ENABLED=1 go build -o sqlvalid .
 
 .PHONY: test
 test:
