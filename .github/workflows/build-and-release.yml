@@ -29,9 +29,6 @@ jobs:
           - os: windows
             arch: amd64
             runner: windows-latest
-          - os: windows
-            arch: arm64
-            runner: windows-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -117,9 +114,6 @@ jobs:
           
           # Windows amd64
           cp artifacts/sqlvalid-windows-amd64/sqlvalid.exe release/sqlvalid-windows-amd64.exe
-          
-          # Windows arm64
-          cp artifacts/sqlvalid-windows-arm64/sqlvalid.exe release/sqlvalid-windows-arm64.exe
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
